@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSubHubbubNet", "PubSubHubbubNet\PubSubHubbubNet.csproj", "{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSubHubbubNetTests", "PubSubHubbubNetTests\PubSubHubbubNetTests.csproj", "{86BBD795-8A7E-4351-8344-28177C949D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{110AFEE9-9077-4C29-BF4B-875D749B589A}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		PubSubHubbubNet.vsmdi = PubSubHubbubNet.vsmdi
+		readme.markdown = readme.markdown
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PubSubHubbubNet.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BBD795-8A7E-4351-8344-28177C949D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BBD795-8A7E-4351-8344-28177C949D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BBD795-8A7E-4351-8344-28177C949D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BBD795-8A7E-4351-8344-28177C949D26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
