@@ -17,19 +17,21 @@ namespace PubSubHubbubNetExample
 
         protected void submitButton_Click(object sender, EventArgs e)
         {
+          
             SubscriptionRequest request = new SubscriptionRequest()
             {
                 Topic = new Uri( topicUrl.Text.Trim() ),
-                Hub = new Uri ( hubUrl.Text.Trim() )
+                Hub = new Uri ( hubUrl.Text.Trim() ),
+                Callback = new Uri( "/SubscriptionCallback.ashx", UriKind.Relative)
 
             };
 
-            HttpResponse response = request.Submit();
+            bool response = request.Submit();
 
             subscribePanel.Visible = true;
             resultsPanel.Visible = true;
 
-            responseCode.Text = response.StatusCode.ToString();
+            responseCode.Text = response.ToString();
 
 
         }

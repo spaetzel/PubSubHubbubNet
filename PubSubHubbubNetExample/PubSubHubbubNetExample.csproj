@@ -73,12 +73,18 @@
     <Compile Include="Subscribe.aspx.designer.cs">
       <DependentUpon>Subscribe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SubscriptionCallback.ashx.cs">
+      <DependentUpon>SubscriptionCallback.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PubSubHubbubNet\PubSubHubbubNet.csproj">
       <Project>{E86C6E6A-106F-40B8-8E3E-76C2E9527D11}</Project>
       <Name>PubSubHubbubNet</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SubscriptionCallback.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

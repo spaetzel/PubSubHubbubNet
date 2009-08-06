@@ -16,12 +16,23 @@ namespace PubSubHubbubNet
         /// </summary>
         public Uri Topic { get; set; }
 
-
+        private string _verifyToken;
         /// <summary>
         /// A subscriber-provided opaque token that will be echoed back in the verification request to assist the subscriber in identifying which subscription request is being verified. If this is not included, no token will be included in the verification request. 
         /// If not provided, a value will be generated
         /// </summary>
-        public string VerifyToken { get; set; }
+        public string VerifyToken
+        {
+            get
+            {
+                if (_verifyToken.IsNullOrEmpty())
+                {
+                    _verifyToken = new Guid().ToString();
+                }
+                return _verifyToken;
+            }
+            set { _verifyToken = value; }
+        }
 
 
 

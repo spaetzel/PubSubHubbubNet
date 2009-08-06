@@ -32,10 +32,15 @@ namespace PubSubHubbubNet
         /// On success an http 204 code will be returned
         /// </summary>
         /// <returns></returns>
-        public System.Web.HttpResponse Submit()
+        public bool Submit()
         {
-            throw new NotImplementedException();
-        }
+            string parameters = String.Format("hub.mode={0}&hub.callback={1}&hub.topic={2}&hub.verify={3}&hub.verify_token={4}&hub.lease_seconds={5}", this.Action.ToString(), this.Callback, this.Topic.AbsoluteUri, "async", VerifyToken, LeaseSeconds);
+
+            Utilities.HttpPost(Hub.AbsoluteUri, parameters);
+
+            return true;
+           
+            }
 
 
         /// <summary>

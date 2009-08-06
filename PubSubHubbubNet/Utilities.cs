@@ -2,11 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
 
 namespace PubSubHubbubNet
 {
     public static class Utilities
     {
+        public static bool IsNullOrEmpty(this string test)
+        {
+            if (test == null)
+            {
+                return true;
+            }
+            else
+            {
+                return String.IsNullOrEmpty(test.Trim());
+            }
+        }
+
         public static string HttpPost(string uri, string parameters)
         {
 
@@ -44,6 +57,7 @@ namespace PubSubHubbubNet
             {
                 responseArray = myWebClient.UploadData(uri, "POST", byteArray);
 
+               
                 // Decode and display the response.
                 return Encoding.ASCII.GetString(responseArray);
             }
