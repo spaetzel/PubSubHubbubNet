@@ -44,6 +44,7 @@ namespace PubSubHubbubNet
         /// <returns></returns>
         public Subscription Verify(HttpRequest request)
         {
+            throw new NotImplementedException();
         }
 
 
