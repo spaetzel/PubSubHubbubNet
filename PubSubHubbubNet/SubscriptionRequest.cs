@@ -20,8 +20,10 @@ namespace PubSubHubbubNet
         /// </summary>
         public Uri Callback { get; set; }
 
-       
-
+        /// <summary>
+        /// The Url of the hub to subscribe to
+        /// </summary>
+        public Uri Hub { get; set; }
 
 
 
